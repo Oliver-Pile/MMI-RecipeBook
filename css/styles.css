@@ -10373,4 +10373,19 @@ p {
       padding-top: 10px;
       margin: 0; }
 
+body#page-login form label {
+  color: #FFF; }
+body#page-login form .btn {
+  margin-top: 10px; }
+body#page-login #registration-form {
+  background-color: #66d891;
+  padding: 10px;
+  border-radius: 3px; }
+  body#page-login #registration-form label {
+    color: #393e4f; }
+  body#page-login #registration-form .btn {
+    background-color: #FFF;
+    color: #393e4f;
+    border: 0; }
+
 /*# sourceMappingURL=styles.css.map */
