@@ -10302,7 +10302,7 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important; } }
 header .page-header-top {
-  padding: 40px 40px 40px 0; }
+  padding: 40px 0 40px 0; }
   header .page-header-top img {
     max-width: 200px; }
 
