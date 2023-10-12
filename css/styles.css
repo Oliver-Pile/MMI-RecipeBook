@@ -10346,4 +10346,31 @@ p {
   background-color: #66d891;
   color: #393e4f; }
 
+.recipe-card {
+  margin: 0 0 30px 0;
+  background-color: #FFF;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.15);
+  padding: 12px;
+  text-align: center;
+  border: solid 1px #eaeaea;
+  border-radius: 3px; }
+  .recipe-card .recipe-card-image {
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+    .recipe-card .recipe-card-image a {
+      display: block;
+      height: 200px; }
+  .recipe-card a {
+    color: #393e4f;
+    text-decoration: none; }
+    .recipe-card a h3, .recipe-card a .h3 {
+      font-size: 1.1rem;
+      padding-top: 10px;
+      margin: 0; }
+
 /*# sourceMappingURL=styles.css.map */
