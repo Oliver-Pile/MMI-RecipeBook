@@ -10301,12 +10301,28 @@ textarea.form-control-lg {
 
   .d-print-none {
     display: none !important; } }
+header .page-header-top {
+  padding: 40px 40px 40px 0; }
+  header .page-header-top img {
+    max-width: 200px; }
+
+header nav {
+  background-color: #66d891; }
+  header nav a.nav-link,
+  header nav a.nav-link:hover,
+  header nav a.nav-link:active {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #393e4f; }
+  header nav .navbar-brand {
+    font-family: 'Bangers', cursive; }
+  header nav ul li a i {
+    margin-right: 4px; }
+
+body {
+  background-color: #393e4f; }
+
 body {
   font-family: 'Roboto', sans-serif; }
-
-nav .navbar-brand {
-  font-family: 'Bangers', cursive; }
-nav ul li a i {
-  margin-right: 4px; }
 
 /*# sourceMappingURL=styles.css.map */
