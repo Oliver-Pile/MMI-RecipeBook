@@ -10322,7 +10322,25 @@ header nav {
 body {
   background-color: #393e4f; }
 
-body {
+img {
+  max-width: 100%; }
+
+* {
   font-family: 'Roboto', sans-serif; }
+
+h1, .h1 {
+  font-weight: 100;
+  color: #FFF;
+  font-size: 2.2rem;
+  border-bottom: solid 2px #66d891; }
+
+p {
+  color: #FFF;
+  font-weight: 300;
+  line-height: 1.8rem; }
+
+.btn.btn-studenteat {
+  background-color: #66d891;
+  color: #393e4f; }
 
 /*# sourceMappingURL=styles.css.map */
