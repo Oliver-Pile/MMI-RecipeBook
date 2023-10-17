@@ -1,18 +1,18 @@
 on: [push]
 
 jobs:
-    deploy_job:
+  deploy_job:
     runs-on: ubuntu-latest
     name: deploy
     steps:
-        - name: Checkout
+      - name: Checkout
         uses: actions/checkout@v2
-        - name: Deploy file
+      - name: Deploy file
         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
-            username: ${{ secrets.FTP_USERNAME }}
-            server: ${{ secrets.FTP_SERVER }}
-            local_path: './*'
-            remote_path: '/httpdocs/recipie_website'
-            sftp_only: true
-            password: ${{ secrets.FTP_PASSWORD }}
+          username: ${{ secrets.FTP_USERNAME }}
+          server: ${{ secrets.FTP_SERVER }}
+          local_path: './*'
+          remote_path: '/httpdocs/recipie_website'
+          sftp_only: true
+          password: ${{ secrets.FTP_PASSWORD }}
