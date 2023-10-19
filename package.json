@@ -1,12 +1,13 @@
 {
-  "name": "Class-Recipie-Project",
+  "name": "Class-Recipe-Project",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/Oliver-Pile/MMI-RecipieBook.git",
+  "repository": "https://github.com/Oliver-Pile/MMI-RecipeBook.git",
   "author": "Oliver Pile <oliver.pile@bt.com>",
   "license": "MIT",
   "dependencies": {
     "bootstrap": "^5.3.2",
-    "jquery": "^3.7.1"
+    "jquery": "^3.7.1",
+    "lightbox2": "^2.11.4"
   }
 }
