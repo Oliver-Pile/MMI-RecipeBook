@@ -10,8 +10,7 @@ jobs:
       - name: Install Deps
         run: yarn
       - name: Compile Css
-        run: mkdir css
-        run: sass scss/main.scss css/styles.css
+        run: mkdir css; sass scss/main.scss css/styles.css
       - name: Deploy app
         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
