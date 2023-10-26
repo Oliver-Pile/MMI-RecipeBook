@@ -1,3 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Student Recipe Page</title>
+    <script src="https://kit.fontawesome.com/61a869ab1a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body id="page-<?php echo $page; ?>">
 <header>
     <div class="page-header-top container text-center text-md-start">
       <a href="index.php"><img src="./images/logo.jpg" alt="StudentEat" /></a>
@@ -12,13 +25,13 @@
       <div class="collapse navbar-collapse" id="navbar">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="index.php"><i class="fa-solid fa-house"></i>Home</a>
+            <a class="nav-link" href="index.php?p=home"><i class="fa-solid fa-house"></i>Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="categories.php"><i class="fa-solid fa-utensils"></i>categories</a>
+            <a class="nav-link" href="index.php?p=categories"><i class="fa-solid fa-utensils"></i>categories</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="login.php"><i class="fas fa-sign-in-alt"></i> Login / Register</a>
+            <a class="nav-link" href="index.php?p=login"><i class="fas fa-sign-in-alt"></i> Login / Register</a>
           </li>
         </ul>
         <form action="search.php" method="get" class="d-flex">
