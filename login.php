@@ -10,10 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
   </head>
-  <body id="page-home">
+  <body id="page-login">
   <header>
     <div class="page-header-top container text-center text-md-start">
-      <a href="index.html"><img src="./images/logo.jpg" alt="StudentEat" /></a>
+      <a href="index.php"><img src="./images/logo.jpg" alt="StudentEat" /></a>
     </div>
     <nav class="navbar navbar-expand-lg mb-4">
       <div class="container">
@@ -25,16 +25,16 @@
       <div class="collapse navbar-collapse" id="navbar">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+            <a class="nav-link" href="index.php"><i class="fa-solid fa-house"></i>Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="categories.html"><i class="fa-solid fa-utensils"></i>categories</a>
+            <a class="nav-link" href="categories.php"><i class="fa-solid fa-utensils"></i>categories</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="login.html"><i class="fas fa-sign-in-alt"></i> Login / Register</a>
+            <a class="nav-link" href="login.php"><i class="fas fa-sign-in-alt"></i> Login / Register</a>
           </li>
         </ul>
-        <form action="search.html" method="get" class="d-flex">
+        <form action="search.php" method="get" class="d-flex">
           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-dark ms-2" type="submit">Search</button>
         </form>
@@ -43,15 +43,38 @@
     </nav>
   </header>
   <div class="container">
-    <h1 class="mb-4 pb-2">Welcome to StudentEat!</h1>
+    <h1 class="mb-4 pb-2">Login or Register</h1>
     <div class="row">
-      <div class="col-lg-9">
-        <p>Hello User! This is a site</p>
-        <p>View all of your favourite recipes</p>
-        <a href="categories.html" class="btn btn-studenteat">Browse recipes</a>
+      <div class="col-md-3">
+        <form id="login-form" method="post" action="">
+          <div class="form-group">
+            <label for="login_email">Email address</label>
+            <input type="email" class="form-control" id="login_email" name="email">
+            </div>
+            <div class="form-group">
+            <label for="login_password">Password</label>
+            <input type="password" class="form-control" id="login_password" name="password">
+            </div>
+            <button type="submit" class="btn btn-studenteat">Login</button>
+        </form>
       </div>
-      <div class="col-lg-3">
-        <img src="./images/plate.png" alt="Plate of food"/>
+      <div class="col-md-3">
+        <form id="registration-form" method="post" action="">
+          <div class="form-group">
+            <label for="reg_email">Email address</label>
+            <input type="email" class="form-control" id="reg_email" name="email">
+            </div>
+            <div class="form-group">
+            <label for="reg_password">Password</label>
+            <input type="password" class="form-control" id="reg_password" name="password">
+            </div>
+            <div class="form-group">
+            <label for="reg_password_confirm">Confirm Password</label>
+            <input type="password" class="form-control" id="reg_password_confirm"
+            name="password_confirm">
+            </div>
+            <button type="submit" class="btn btn-primary">Register</button>            
+        </form>
       </div>
     </div>
   </div>

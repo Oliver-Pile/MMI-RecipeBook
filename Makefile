@@ -1,5 +1,5 @@
-all: compile_css open
+all: compile_css server
 compile_css:
 	sass scss/main.scss css/styles.css
-open:
-	open index.html
+server:
+	php -S localhost:3000
