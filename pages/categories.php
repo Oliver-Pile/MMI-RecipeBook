@@ -1,165 +1,22 @@
-  <div class="container">
-    <h1 class="mb-4 pb-2">Recipe Categories</h1>
-    <div class="row">
-      <div class="col-md-3">
-        <div class="recipe-card">
-          <div class="recipe-card-image" style="background-image: url('./recipe-images/burger.jpg');">
-            <a href="recipes.php"></a>
-          </div>
-          <a href="recipes.php"><h3>Lunch Recipes</h3></a>
+<?php
+  $Category = new Category($Conn);
+  $categories = $Category->getAllCategories();
+?>
+  
+<div class="container">
+  <h1 class="mb-4 pb-2">Recipe Categories</h1>
+  <div class="row">
+  <?php foreach($categories as $category) { ?>
+    <div class="col-md-3">
+      <div class="recipe-card">
+        <div class="recipe-card-image" style="background-image: url('./category-images/<?php echo $category['category_image']; ?>');">
+        <a href="index.php?p=recipes&id=<?php echo $category['category_id']; ?>"></a>
         </div>
-      </div>
-      <div class="col-md-3">
-        <div class="recipe-card">
-          <div class="recipe-card-image" style="background-image: url('./recipe-images/burger.jpg');">
-            <a href="recipes.php"></a>
-          </div>
-          <a href="recipes.php"><h3>Lunch Recipes</h3></a>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="recipe-card">
-          <div class="recipe-card-image" style="background-image: url('./recipe-images/burger.jpg');">
-            <a href="recipes.php"></a>
-          </div>
-          <a href="recipes.php"><h3>Lunch Recipes</h3></a>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="recipe-card">
-          <div class="recipe-card-image" style="background-image: url('./recipe-images/burger.jpg');">
-            <a href="recipes.php"></a>
-          </div>
-          <a href="recipes.php"><h3>Lunch Recipes</h3></a>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="recipe-card">
-          <div class="recipe-card-image" style="background-image: url('./recipe-images/burger.jpg');">
-            <a href="recipes.php"></a>
-          </div>
-          <a href="recipes.php"><h3>Lunch Recipes</h3></a>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="recipe-card">
-          <div class="recipe-card-image" style="background-image: url('./recipe-images/burger.jpg');">
-            <a href="recipes.php"></a>
-          </div>
-          <a href="recipes.php"><h3>Lunch Recipes</h3></a>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="recipe-card">
-          <div class="recipe-card-image" style="background-image: url('./recipe-images/burger.jpg');">
-            <a href="recipes.php"></a>
-          </div>
-          <a href="recipes.php"><h3>Lunch Recipes</h3></a>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="recipe-card">
-          <div class="recipe-card-image" style="background-image: url('./recipe-images/burger.jpg');">
-            <a href="recipes.php"></a>
-          </div>
-          <a href="recipes.php"><h3>Lunch Recipes</h3></a>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="recipe-card">
-          <div class="recipe-card-image" style="background-image: url('./recipe-images/burger.jpg');">
-            <a href="recipes.php"></a>
-          </div>
-          <a href="recipes.php"><h3>Lunch Recipes</h3></a>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="recipe-card">
-          <div class="recipe-card-image" style="background-image: url('./recipe-images/burger.jpg');">
-            <a href="recipes.php"></a>
-          </div>
-          <a href="recipes.php"><h3>Lunch Recipes</h3></a>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="recipe-card">
-          <div class="recipe-card-image" style="background-image: url('./recipe-images/burger.jpg');">
-            <a href="recipes.php"></a>
-          </div>
-          <a href="recipes.php"><h3>Lunch Recipes</h3></a>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="recipe-card">
-          <div class="recipe-card-image" style="background-image: url('./recipe-images/burger.jpg');">
-            <a href="recipes.php"></a>
-          </div>
-          <a href="recipes.php"><h3>Lunch Recipes</h3></a>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="recipe-card">
-          <div class="recipe-card-image" style="background-image: url('./recipe-images/burger.jpg');">
-            <a href="recipes.php"></a>
-          </div>
-          <a href="recipes.php"><h3>Lunch Recipes</h3></a>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="recipe-card">
-          <div class="recipe-card-image" style="background-image: url('./recipe-images/burger.jpg');">
-            <a href="recipes.php"></a>
-          </div>
-          <a href="recipes.php"><h3>Lunch Recipes</h3></a>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="recipe-card">
-          <div class="recipe-card-image" style="background-image: url('./recipe-images/burger.jpg');">
-            <a href="recipes.php"></a>
-          </div>
-          <a href="recipes.php"><h3>Lunch Recipes</h3></a>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="recipe-card">
-          <div class="recipe-card-image" style="background-image: url('./recipe-images/burger.jpg');">
-            <a href="recipes.php"></a>
-          </div>
-          <a href="recipes.php"><h3>Lunch Recipes</h3></a>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="recipe-card">
-          <div class="recipe-card-image" style="background-image: url('./recipe-images/burger.jpg');">
-            <a href="recipes.php"></a>
-          </div>
-          <a href="recipes.php"><h3>Lunch Recipes</h3></a>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="recipe-card">
-          <div class="recipe-card-image" style="background-image: url('./recipe-images/burger.jpg');">
-            <a href="recipes.php"></a>
-          </div>
-          <a href="recipes.php"><h3>Lunch Recipes</h3></a>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="recipe-card">
-          <div class="recipe-card-image" style="background-image: url('./recipe-images/burger.jpg');">
-            <a href="recipes.php"></a>
-          </div>
-          <a href="recipes.php"><h3>Lunch Recipes</h3></a>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="recipe-card">
-          <div class="recipe-card-image" style="background-image: url('./recipe-images/burger.jpg');">
-            <a href="recipes.php"></a>
-          </div>
-          <a href="recipes.php"><h3>Lunch Recipes</h3></a>
-        </div>
+        <a href="index.php?p=recipes&id=<?php echo $category['category_id']; ?>">
+          <h3><?php echo $category['category_name']; ?></h3>
+        </a>
       </div>
     </div>
+    <?php } ?>
   </div>
+</div>
