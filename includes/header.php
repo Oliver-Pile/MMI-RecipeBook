@@ -30,9 +30,15 @@
           <li class="nav-item">
             <a class="nav-link" href="index.php?p=categories"><i class="fa-solid fa-utensils"></i>categories</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.php?p=login"><i class="fas fa-sign-in-alt"></i> Login / Register</a>
-          </li>
+          <?php if($_SESSION['is_loggedin']) { ?>
+            <li class="nav-item">
+              <a class="nav-link" href="index.php?p=logout">Logout</a>
+            </li>
+            <?php }else{ ?>
+            <li class="nav-item">
+              <a class="nav-link" href="index.php?p=login">Login / Register</a>
+            </li>
+            <?php } ?>
         </ul>
         <form action="search.php" method="get" class="d-flex">
           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">

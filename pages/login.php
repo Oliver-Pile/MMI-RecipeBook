@@ -13,7 +13,8 @@
         $error = "Password and Confirm Password do not match";
     } else if (strlen($_POST['password']) < 8) {
       $error = "Password must be at least 8 characters in length";
-    }if($error) {
+    }
+    if($error) {
       ?>
       <div class="alert alert-danger" role="alert">
         <?php echo $error; ?>
@@ -36,7 +37,41 @@
           }
         }
   } else if($_POST['login']) {
-    // Login form submitted
+    if(!$_POST['email']){
+      $error = "Email not set";
+    } else if(!$_POST['password']) {
+      $error = "Password not set";
+    } else if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+      $error = "Email address is not valid";
+    } else if (strlen($_POST['password']) < 8) {
+      $error = "Password must be at least 8 characters in length";
+    }
+    if($error) {
+      ?>
+      <div class="alert alert-danger" role="alert">
+        <?php echo $error; ?>
+      </div>
+      <?php
+      }else{
+        $user_data = $User->loginUser($_POST);
+        if($user_data) {
+          // Credentials correct
+          $_SESSION['is_loggedin'] = true;
+          $_SESSION['user_data'] = $user_data;
+          ?>
+          <div class="alert alert-success" role="alert">
+            You have been logged in, welcome back!
+          </div>
+          <?php
+        } else{
+          // Credentials incorrect
+          ?>
+          <div class="alert alert-danger" role="alert">
+            Login credentials are incorrect.
+          </div>
+          <?php
+        }
+      }
   }
 ?>
 <div class="container">
