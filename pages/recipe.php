@@ -27,6 +27,24 @@
       <li><i class="fas fa-dollar-sign"></i> <?php echo $recipe_data['recipe_price']; ?></li>
       <li><i class="fas fa-tags"></i> <?php echo $recipe_data['recipe_tags']; ?></li>
       </ul>
+
+      <?php
+        $Favourite = new Favourite($Conn);
+        $is_fav = $Favourite->isFavourite($_GET['id']);
+        if($is_fav) {
+        ?>
+        <button id="removeFav" type="button" class="btn btn-primary mb-3" data-recipeid="<?php echo
+          $_GET['id']; ?>">Remove from favourites
+        </button>
+        <?php
+        } else {
+        ?>
+        <button id="addFav" type="button" class="btn btn-primary mb-3" data-recipeid="<?php echo $_GET['id']; ?>">
+          Add to favourites
+        </button>
+        <?php
+        }
+        ?>
     </div>
   </div>
 </div>
