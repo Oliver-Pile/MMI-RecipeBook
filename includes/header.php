@@ -30,6 +30,9 @@
           <li class="nav-item">
             <a class="nav-link" href="index.php?p=categories"><i class="fa-solid fa-utensils"></i>categories</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.php?p=account">My Account</a>
+          </li>
           <?php if($_SESSION['is_loggedin']) { ?>
             <li class="nav-item">
               <a class="nav-link" href="index.php?p=logout">Logout</a>
