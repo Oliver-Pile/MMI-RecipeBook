@@ -11,5 +11,7 @@
   $output = curl_exec($ch);
   curl_close($ch);
 
-  echo "<p>The weather in ".$location." is ".$output['weather'][0]['main']."</p>";
+  $output = json_decode($output, true);
+
+  echo "<p>The weather in ".$location." is " . $output['weather'][0]['main']. "</p>";
 ?>
