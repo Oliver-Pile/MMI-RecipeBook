@@ -1,7 +1,12 @@
 <div class="container">
   <h1 class="mb-4 pb-2">My Account</h1>
   <p>Welcome to your account. From here you can view the recipes added to your favourites list.</p>
-
+  <?php
+    if($_SESSION['user_data']['user_image']) {
+      echo '<img class="mb-3" style="max-width: 100px;" src="./user-images/'.$_SESSION['user_data']['user_image'].'" />';
+    }
+  ?>
+  <p><a class="btn btn-studenteat" href="index.php?p=editprofileimage">Edit Profile Image</a></p>
   <h2>My Favourites</h2>
   <ul class="user-favs">
     <?php

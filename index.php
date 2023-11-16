@@ -8,6 +8,14 @@
   require_once(__DIR__.'/includes/autoloader.php');
   require_once(__DIR__.'/includes/database.php');
   
+
+  if($_SESSION['user_data']) {
+    $User = new User($Conn);
+    $user_data = $User->getUser();
+    $_SESSION['user_data'] = $user_data;
+  }
+
+
   $page = $_GET['p'];
 
   if(!$page){
