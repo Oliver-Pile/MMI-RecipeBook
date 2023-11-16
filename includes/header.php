@@ -43,8 +43,8 @@
             </li>
             <?php } ?>
         </ul>
-        <form action="search.php" method="get" class="d-flex">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <form action="index.php?p=search" method="post" class="d-flex">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" name="query" aria-label="Search">
           <button class="btn btn-outline-dark ms-2" type="submit">Search</button>
         </form>
       </div>
